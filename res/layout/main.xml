@@ -77,6 +77,7 @@
             android:text="@string/MainStart"
             android:textColor="@color/MainButtonText"
             android:background="@color/MainButtonStart"
+            android:background="@color/MainButtonStart"
             android:textSize="@dimen/TitleName" />
         
         <TextView
