@@ -86,7 +86,6 @@
             android:text="@string/MainFinish"
             android:textColor="@color/MainButtonText"
             android:background="@color/MainButtonFinish"
-            android:background="@color/MainButtonFinish"
             android:textSize="@dimen/TitleName" />
         
         <TextView
