@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyRunningHelper</string>
+    <string name="action_settings">action_settings</string>
+    
+    <string name="MainPage">主界面</string>
+    <string name="History">跑步记录</string>
+    <string name="Config">设置</string>
+    
+    <!-- MainLayout -->
+    <string name="MainStart">开始跑步</string>
+    <string name="MainFinish">完成</string>
+    <string name="MainPause">暂停</string>
+    <string name="MainContinue">继续</string>
+
+</resources>

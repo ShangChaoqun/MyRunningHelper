@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="TitleName">#999</color>
+    <color name="TitleBackground">#fff</color>
+    <color name="TitleBorder">#ccc</color>
+    <color name="TitleSelected">#0f0</color>
+    
+    <color name="DefaultBorderColor">#ccc</color>
+    
+    <color name="DefaultBackground">#fff</color>
+    
+    <!-- MainLayout -->
+    <color name="MainButtonText">#fff</color>
+    
+    <color name="MainButtonStart">#fff</color>
+    <color name="MainButtonStartPress">#fff</color>
+    
+    <color name="MainButtonPause">#fff</color>
+    <color name="MainButtonPausePress">#fff</color>
+    
+    <color name="MainButtonContinue">#fff</color>
+    <color name="MainButtonContinuePress">#fff</color>
+    
+    <color name="MainButtonFinish">#fff</color>
+    <color name="MainButtonFinishPress">#fff</color>
+</resources>

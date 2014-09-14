@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="TitleName">22dip</dimen>
+    <dimen name="TitleHeight">50dip</dimen>
+    <dimen name="TitleBorder">5dip</dimen>
+    
+    <dimen name="DefaultBorder">1dip</dimen>
+    <dimen name="DefaultBorderMargin">25dip</dimen>
+    
+    <!-- MainLayout -->
+    <dimen name="MainBackgroundImage">180dip</dimen>
+    
+    <dimen name="MainTime">120dip</dimen>
+    <dimen name="MainDistance">80dip</dimen>
+    <dimen name="MainConsume">80dip</dimen>
+    
+    <dimen name="MainButtonStartHeight">40dip</dimen>
+    <dimen name="MainButtonPauseContinueHeight">40dip</dimen>
+    <dimen name="MainButtonFinishHeight">40dip</dimen>
+    <dimen name="MainButtonStartWidth">150dip</dimen>
+    <dimen name="MainButtonPauseContinueWidth">70dip</dimen>
+    <dimen name="MainButtonFinishWidth">70dip</dimen>
+
+    <dimen name="MainButtonTextSize">22dip</dimen>
+</resources>

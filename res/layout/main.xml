@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/DefaultBackground"
+    android:orientation="vertical" >   
+
+    <LinearLayout
+        android:id="@+id/MainBackgroundImage"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/MainBackgroundImage"
+        android:orientation="vertical"
+        android:background="@drawable/mainbackground" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/MainTime"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/MainTime"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/MainBorder1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DefaultBorder"
+        android:layout_marginLeft="@dimen/DefaultBorderMargin"
+        android:layout_marginRight="@dimen/DefaultBorderMargin"
+        android:orientation="vertical"
+        android:background="@color/DefaultBorderColor" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/MainDistance"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/MainDistance"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/MainBorder2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DefaultBorder"
+        android:layout_marginLeft="@dimen/DefaultBorderMargin"
+        android:layout_marginRight="@dimen/DefaultBorderMargin"
+        android:orientation="vertical"
+        android:background="@color/DefaultBorderColor" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/MainConsume"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/MainConsume"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/MainBorder3"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DefaultBorder"
+        android:layout_marginLeft="@dimen/DefaultBorderMargin"
+        android:layout_marginRight="@dimen/DefaultBorderMargin"
+        android:orientation="vertical"
+        android:background="@color/DefaultBorderColor" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/MainButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">"
+        
+        <TextView
+            android:id="@+id/MainTextStart"
+            android:layout_width="@dimen/MainButtonStartWidth"
+            android:layout_height="@dimen/MainButtonStartHeight"
+            android:text="@string/MainStart"
+            android:textColor="@color/MainButtonText"
+            android:background="@color/MainButtonStart"
+            android:textSize="@dimen/TitleName" />
+        
+        <TextView
+            android:id="@+id/MainTextFinish"
+            android:layout_width="@dimen/MainButtonFinishWidth"
+            android:layout_height="@dimen/MainButtonFinishHeight"
+            android:text="@string/MainFinish"
+            android:textColor="@color/MainButtonText"
+            android:background="@color/MainButtonFinish"
+            android:textSize="@dimen/TitleName" />
+        
+        <TextView
+            android:id="@+id/MainPauseContinue"
+            android:layout_width="@dimen/MainButtonPauseContinueWidth"
+            android:layout_height="@dimen/MainButtonPauseContinueHeight"
+            android:text="@string/MainPause"
+            android:textColor="@color/MainButtonText"
+            android:background="@color/MainButtonPause"
+            android:textSize="@dimen/TitleName" />
+    </LinearLayout>
+    
+</LinearLayout>
