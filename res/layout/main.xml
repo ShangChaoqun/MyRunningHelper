@@ -95,7 +95,7 @@
             android:text="@string/MainPause"
             android:textColor="@color/MainButtonText"
             android:background="@color/MainButtonPause"
-            commit2
+            commit3
             android:textSize="@dimen/TitleName" />
     </LinearLayout>
     
