@@ -85,7 +85,6 @@
             android:layout_height="@dimen/MainButtonFinishHeight"
             android:text="@string/MainFinish"
             android:textColor="@color/MainButtonText"
-            android:textColor="@color/MainButtonText"
             android:background="@color/MainButtonFinish"
             android:textSize="@dimen/TitleName" />
         
