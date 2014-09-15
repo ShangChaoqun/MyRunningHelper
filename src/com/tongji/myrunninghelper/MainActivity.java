@@ -15,16 +15,21 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity implements OnClickListener {
-	
-	//页面起始位置(first=1,second=2,third=3)
+
+	// 页面起始位置(first=1,second=2,third=3)
 	private final int StartPage = 2;
-	
+
 	private ViewPager mPager;// 页卡内容
 	private List<View> listViews = new ArrayList<View>(); // Tab页面列表
 	private TextView Textview;// 页卡头标
-	private int currpage =StartPage-1;
+	private int currpage = StartPage - 1;
+
 	private int[] TextViewList = { R.id.text1, R.id.text2, R.id.text3 };
-	private int[] LayViewList = { R.layout.config, R.layout.main, R.layout.history };
+	private int[] LayViewList = { R.layout.config, R.layout.main,
+			R.layout.history };
+
+	private int[] textViewButton = { R.id.MainTextStart, R.id.MainTextFinish,
+			R.id.MainTextPauseContinue };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,17 +39,25 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 	}
 
 	private void init() {
-		InitTextView();
+		InitTextViewTitle();
+		InitTextViewButton();
 		InitViewPager();
 	}
 
-	private void InitTextView() {
+	private void InitTextViewTitle() {
 		for (int element : TextViewList) {
 			Textview = (TextView) findViewById(element);
 			Textview.setOnClickListener(this);
 		}
 	}
 
+	private void InitTextViewButton() {
+		//for (int element : textViewButton) {
+			/*Textview = (TextView) findViewById(R.id.MainTextStart);
+			Textview.setOnClickListener(this);*/
+		//}
+	}
+	
 	private void InitViewPager() {
 		LayoutInflater mInflater = getLayoutInflater();
 		mPager = (ViewPager) findViewById(R.id.vPager);
@@ -55,7 +68,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		mPager.setAdapter(new MyPagerAdapter(listViews));
 		mPager.setCurrentItem(currpage);
 		mPager.setOnPageChangeListener(new MyOnPageChangeListener());
-		
+
 		Textview = (TextView) findViewById(TextViewList[currpage]);
 		Textview.setTextColor(getResources().getColor(R.color.TitleSelected));
 	}
@@ -70,19 +83,40 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			break;
 		case R.id.text3:
 			mPager.setCurrentItem(2);
+			break;
+			
+		case R.id.MainTextStart:
+			ShowHideButton(View.GONE,View.VISIBLE,View.VISIBLE);
+			break;
+		case R.id.MainTextFinish:
+			ShowHideButton(View.VISIBLE,View.GONE,View.GONE);
+			break;
+		case R.id.MainTextPauseContinue:
+			break;
 		}
 	}
 
+	private void ShowHideButton(int control_start,int control_finish,int control_pausecontinue)
+	{
+		Textview = (TextView) findViewById(R.id.MainTextStart);
+		Textview.setVisibility(control_start);
+		Textview = (TextView) findViewById(R.id.MainTextFinish);
+		Textview.setVisibility(control_finish);
+		Textview = (TextView) findViewById(R.id.MainTextPauseContinue);
+		Textview.setVisibility(control_pausecontinue);
+	}
+	
 	public class MyOnPageChangeListener implements OnPageChangeListener {
 		@Override
 		public void onPageSelected(int arg0) {
-			
+
 			Textview = (TextView) findViewById(TextViewList[currpage]);
 			Textview.setTextColor(getResources().getColor(R.color.TitleName));
-			
+
 			Textview = (TextView) findViewById(TextViewList[arg0]);
-			Textview.setTextColor(getResources().getColor(R.color.TitleSelected));
-			currpage=arg0;
+			Textview.setTextColor(getResources()
+					.getColor(R.color.TitleSelected));
+			currpage = arg0;
 		}
 
 		@Override

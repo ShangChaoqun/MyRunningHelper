@@ -22,8 +22,8 @@
     <dimen name="MainButtonPauseContinueHeight">40dip</dimen>
     <dimen name="MainButtonFinishHeight">40dip</dimen>
     <dimen name="MainButtonStartWidth">150dip</dimen>
-    <dimen name="MainButtonPauseContinueWidth">70dip</dimen>
-    <dimen name="MainButtonFinishWidth">70dip</dimen>
+    <dimen name="MainButtonPauseContinueWidth">100dip</dimen>
+    <dimen name="MainButtonFinishWidth">100dip</dimen>
 
     <dimen name="MainButtonTextSize">22dip</dimen>
 </resources>

@@ -13,15 +13,15 @@
     <!-- MainLayout -->
     <color name="MainButtonText">#fff</color>
     
-    <color name="MainButtonStart">#fff</color>
+    <color name="MainButtonStart">#390</color>
     <color name="MainButtonStartPress">#fff</color>
     
-    <color name="MainButtonPause">#fff</color>
+    <color name="MainButtonPause">#390</color>
     <color name="MainButtonPausePress">#fff</color>
     
-    <color name="MainButtonContinue">#fff</color>
+    <color name="MainButtonContinue">#390</color>
     <color name="MainButtonContinuePress">#fff</color>
     
-    <color name="MainButtonFinish">#fff</color>
+    <color name="MainButtonFinish">#390</color>
     <color name="MainButtonFinishPress">#fff</color>
 </resources>
